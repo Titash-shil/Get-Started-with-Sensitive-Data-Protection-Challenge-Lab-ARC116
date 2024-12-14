@@ -10,13 +10,22 @@
 - ### Copy & Run :
 
 ```
-curl -LO raw.githubusercontent.com/Titash-shil/APIs-Explorer-Create-and-Update-a-Cluster-GSP288/refs/heads/main/Qwiklab_explorers_gsp288.sh
+curl -LO raw.githubusercontent.com/Titash-shil/Get-Started-with-Sensitive-Data-Protection-Challenge-Lab-ARC116/refs/heads/main/Qwiklab_Explorers_TS_arc116(1).sh
 
-sudo chmod +x Qwiklab_explorers_gsp288.sh
+sudo chmod +x Qwiklab_Explorers_TS_arc116(1).sh
 
-./Qwiklab_explorers_gsp288.sh
+./Qwiklab_Explorers_TS_arc116(1).sh
 ```
 
+### Run again the following Commands in CloudShell
+
+```
+curl -LO raw.githubusercontent.com/Titash-shil/Get-Started-with-Sensitive-Data-Protection-Challenge-Lab-ARC116/refs/heads/main/Qwiklab_Explorers_TS_arc116(2).sh
+
+sudo chmod +x Qwiklab_Explorers_TS_arc116(2).sh
+
+./Qwiklab_Explorers_TS_arc116(2).sh
+```
 ---
 
 ## Congratulations ..!!🎉  You completed the lab shortly..😃💯
