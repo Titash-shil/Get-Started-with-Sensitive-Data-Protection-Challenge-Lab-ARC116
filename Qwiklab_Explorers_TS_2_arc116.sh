@@ -1,3 +1,30 @@
+#!/bin/bash
+# Define color variables
+
+BLACK=`tput setaf 0`
+RED=`tput setaf 1`
+GREEN=`tput setaf 2`
+YELLOW=`tput setaf 3`
+BLUE=`tput setaf 4`
+MAGENTA=`tput setaf 5`
+CYAN=`tput setaf 6`
+WHITE=`tput setaf 7`
+
+BG_BLACK=`tput setab 0`
+BG_RED=`tput setab 1`
+BG_GREEN=`tput setab 2`
+BG_YELLOW=`tput setab 3`
+BG_BLUE=`tput setab 4`
+BG_MAGENTA=`tput setab 5`
+BG_CYAN=`tput setab 6`
+BG_WHITE=`tput setab 7`
+
+BOLD=`tput bold`
+RESET=`tput sgr0`
+#----------------------------------------------------start--------------------------------------------------#
+
+echo "${BG_MAGENTA}${BOLD}Starting Execution${RESET}"
+
 cat > job-configuration.json << EOM
 {
   "triggerId": "dlp_job",
@@ -46,6 +73,166 @@ cat > job-configuration.json << EOM
             "name": "BELGIUM_NATIONAL_ID_CARD_NUMBER"
           },
           {
+            "name": "BRAZIL_CPF_NUMBER"
+          },
+          {
+            "name": "CANADA_SOCIAL_INSURANCE_NUMBER"
+          },
+          {
+            "name": "CHILE_CDI_NUMBER"
+          },
+          {
+            "name": "CHINA_RESIDENT_ID_NUMBER"
+          },
+          {
+            "name": "COLOMBIA_CDC_NUMBER"
+          },
+          {
+            "name": "CREDIT_CARD_NUMBER"
+          },
+          {
+            "name": "CREDIT_CARD_TRACK_NUMBER"
+          },
+          {
+            "name": "DATE_OF_BIRTH"
+          },
+          {
+            "name": "DENMARK_CPR_NUMBER"
+          },
+          {
+            "name": "EMAIL_ADDRESS"
+          },
+          {
+            "name": "ETHNIC_GROUP"
+          },
+          {
+            "name": "FDA_CODE"
+          },
+          {
+            "name": "FINLAND_NATIONAL_ID_NUMBER"
+          },
+          {
+            "name": "FRANCE_CNI"
+          },
+          {
+            "name": "FRANCE_NIR"
+          },
+          {
+            "name": "FRANCE_TAX_IDENTIFICATION_NUMBER"
+          },
+          {
+            "name": "GENDER"
+          },
+          {
+            "name": "GERMANY_IDENTITY_CARD_NUMBER"
+          },
+          {
+            "name": "GERMANY_TAXPAYER_IDENTIFICATION_NUMBER"
+          },
+          {
+            "name": "HONG_KONG_ID_NUMBER"
+          },
+          {
+            "name": "IBAN_CODE"
+          },
+          {
+            "name": "IMEI_HARDWARE_ID"
+          },
+          {
+            "name": "INDIA_AADHAAR_INDIVIDUAL"
+          },
+          {
+            "name": "INDIA_GST_INDIVIDUAL"
+          },
+          {
+            "name": "INDIA_PAN_INDIVIDUAL"
+          },
+          {
+            "name": "INDONESIA_NIK_NUMBER"
+          },
+          {
+            "name": "IRELAND_PPSN"
+          },
+          {
+            "name": "ISRAEL_IDENTITY_CARD_NUMBER"
+          },
+          {
+            "name": "JAPAN_INDIVIDUAL_NUMBER"
+          },
+          {
+            "name": "KOREA_RRN"
+          },
+          {
+            "name": "MAC_ADDRESS"
+          },
+          {
+            "name": "MEXICO_CURP_NUMBER"
+          },
+          {
+            "name": "NETHERLANDS_BSN_NUMBER"
+          },
+          {
+            "name": "NORWAY_NI_NUMBER"
+          },
+          {
+            "name": "PARAGUAY_CIC_NUMBER"
+          },
+          {
+            "name": "PASSPORT"
+          },
+          {
+            "name": "PERSON_NAME"
+          },
+          {
+            "name": "PERU_DNI_NUMBER"
+          },
+          {
+            "name": "PHONE_NUMBER"
+          },
+          {
+            "name": "POLAND_NATIONAL_ID_NUMBER"
+          },
+          {
+            "name": "PORTUGAL_CDC_NUMBER"
+          },
+          {
+            "name": "SCOTLAND_COMMUNITY_HEALTH_INDEX_NUMBER"
+          },
+          {
+            "name": "SINGAPORE_NATIONAL_REGISTRATION_ID_NUMBER"
+          },
+          {
+            "name": "SPAIN_CIF_NUMBER"
+          },
+          {
+            "name": "SPAIN_DNI_NUMBER"
+          },
+          {
+            "name": "SPAIN_NIE_NUMBER"
+          },
+          {
+            "name": "SPAIN_NIF_NUMBER"
+          },
+          {
+            "name": "SPAIN_SOCIAL_SECURITY_NUMBER"
+          },
+          {
+            "name": "STORAGE_SIGNED_URL"
+          },
+          {
+            "name": "STREET_ADDRESS"
+          },
+          {
+            "name": "SWEDEN_NATIONAL_ID_NUMBER"
+          },
+          {
+            "name": "SWIFT_CODE"
+          },
+          {
+            "name": "THAILAND_NATIONAL_ID_NUMBER"
+          },
+          {
+            "name": "TURKEY_ID_NUMBER"
           },
           {
             "name": "UK_NATIONAL_HEALTH_SERVICE_NUMBER"
@@ -168,3 +355,7 @@ curl --request POST \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \
   -H "X-Goog-User-Project: $DEVSHELL_PROJECT_ID" \
   "https://dlp.googleapis.com/v2/projects/$DEVSHELL_PROJECT_ID/locations/global/jobTriggers/dlp_job:activate"
+
+echo "${BG_RED}${BOLD}Congratulations For Completing The Lab !!!${RESET}"
+
+#-----------------------------------------------------end----------------------------------------------------------#
