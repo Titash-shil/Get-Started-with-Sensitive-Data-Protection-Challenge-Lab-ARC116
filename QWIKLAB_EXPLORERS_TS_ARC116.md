@@ -10,21 +10,21 @@
 - ### Copy & Run :
 
 ```
-curl -LO raw.githubusercontent.com/Titash-shil/Get-Started-with-Sensitive-Data-Protection-Challenge-Lab-ARC116/refs/heads/main/Qwiklab_Explorers_TS_arc116(1).sh
+curl -LO raw.githubusercontent.com/Titash-shil/Get-Started-with-Sensitive-Data-Protection-Challenge-Lab-ARC116/refs/heads/main/Qwiklab_Explorers_TS_1_arc116.sh
 
-sudo chmod +x Qwiklab_Explorers_TS_arc116(1).sh
+sudo chmod +x Qwiklab_Explorers_TS_1_arc116.sh
 
-./Qwiklab_Explorers_TS_arc116(1).sh
+./Qwiklab_Explorers_TS_1_arc116.sh
 ```
 
 ### Run again the following Commands in CloudShell
 
 ```
-curl -LO raw.githubusercontent.com/Titash-shil/Get-Started-with-Sensitive-Data-Protection-Challenge-Lab-ARC116/refs/heads/main/Qwiklab_Explorers_TS_arc116(2).sh
+curl -LO raw.githubusercontent.com/Titash-shil/Get-Started-with-Sensitive-Data-Protection-Challenge-Lab-ARC116/refs/heads/main/Qwiklab_Explorers_TS_2_arc116.sh
 
-sudo chmod +x Qwiklab_Explorers_TS_arc116(2).sh
+sudo chmod +x Qwiklab_Explorers_TS_2_arc116.sh
 
-./Qwiklab_Explorers_TS_arc116(2).sh
+./Qwiklab_Explorers_TS_2_arc116.sh
 ```
 ---
 
